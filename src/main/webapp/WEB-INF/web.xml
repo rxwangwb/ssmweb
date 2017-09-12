@@ -10,7 +10,7 @@
     <!-- 设置log4j -->
     <context-param>
         <param-name>log4jConfigLocation</param-name>
-        <param-value>classpath:config/log4j/log4j.xml</param-value>
+        <param-value>classpath:config/log4j/log4j2.xml</param-value>
     </context-param>
     <!--设置spring 配置文件的位置-->
     <context-param>
@@ -20,9 +20,6 @@
     <!--配置spring listener-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
     <!--解决POST乱码问题-->
     <filter>
