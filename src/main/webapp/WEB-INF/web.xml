@@ -7,6 +7,10 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
+    <context-param>
+        <param-name>log4jConfiguration</param-name>
+        <param-value>classpath:config/log4j2/log4j2.xml</param-value>
+    </context-param>
     <listener>
         <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
     </listener>
