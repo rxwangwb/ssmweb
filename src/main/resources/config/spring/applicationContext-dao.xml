@@ -16,12 +16,14 @@
     </bean>
     <!--sqlsessionFactory bean-->
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="configLocation" value="classpath:config/mybatis/sqlMapConfig.xml"/>
         <property name="dataSource" ref="dataSource"/>
+        <!--以下两种配置选择一种即可-->
+        <!--<property  name="configLocation"  value="classpath:config/mybatis/sqlMapConfig.xml"/>-->
+        <property name="mapperLocations" value="classpath*:mapper/**/*.xml"/>
     </bean>
     <!--自动扫描mapper接口，并注入sqlsession-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.ssmweb.mapper"/>
+        <property name="basePackage" value="com.ssmweb.*.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSession"/>
     </bean>
 </beans>

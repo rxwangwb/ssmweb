@@ -3,6 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="com.ssmweb.*.mapper" />
+        <package name="mapper.videoAlarm" />
     </typeAliases>
+    <mappers>
+        <package name="mapper.videoAlarm"/> <!-- 扫描整个包 -->
+    </mappers>
 </configuration>

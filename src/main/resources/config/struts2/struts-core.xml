@@ -49,7 +49,7 @@
             </interceptor-stack>
         </interceptors>
         <default-interceptor-ref name="myStack"/>
-        <!-- comment added by lulee007 设置找不到action默认跳转的页面->首页 index -->
+        <!-- comment added by rxwangwb 设置找不到action默认跳转的页面->首页 index -->
         <default-action-ref name="index"/>
         <global-results>
             <result name="json" type="json"/>
@@ -58,5 +58,5 @@
         </global-results>
     </package>
     <!-- 预留加载业务-Action配置   -->
-    <!--<include file="config/struts2/struts-user.xml"/>-->
+    <include file="struts/*/struts-*.xml"/>
 </struts>

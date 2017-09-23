@@ -1,4 +1,4 @@
-package com.ssmweb.pojo;
+package com.ssmweb.videoAlarm.pojo;
 
 import java.util.Date;
 
