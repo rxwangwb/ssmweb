@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface EpcpVideoAlarmMapper {
+public interface EpcpVideoAlarmDao {
     List<EpcpVideoAlarm> selectEpcpVideoAlarms();
 }
